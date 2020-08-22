@@ -3,7 +3,7 @@ Spring boot 学习笔记（入门级）
 参考资料<br/>
 [1] [GitHub JeffLi1993/springboot-learning-example](https://github.com/JeffLi1993/springboot-learning-example)
 
-# 1. chapter1 （入门）
+# 1. chapter-1 入门
 ### 创建 Spring boot 项目方式列举
 - [官网在线创建](https://start.spring.io/)
 - IDEA Spring Initializr（社区版没这个，可装插件 Spring Assistant）
@@ -20,7 +20,7 @@ Spring boot 学习笔记（入门级）
 - http://127.0.0.1/hello
 - http://127.0.0.1/book/hello
 
-# 2. chapter2 （配置）
+# 2. chapter-2 配置
 ## 2.1 配置快速入门
 application.properties + BookProperties + HelloBookController
 
@@ -46,12 +46,12 @@ Java .properties 文件默认编码方式是 iso-8859 ，Spring Boot 应用以 U
 可通过在 application.properties 中指定 spring.profiles.active=prod 确定对应生产环境配置文件<br/>
 若 .properties 和 .yml 同时存在，默认优先使用 .properties
 
-# 3. JPA
-# 4. 分页
-# 5. Restful
-# 6. 统一异常处理
-# 7. Mybatis
+# 3. chapter-3 JPA
+# 4. chapter-4 分页
+# 5. chapter-5 Restful
+# 6. chapter-6 统一异常处理
+# 7. chapter-7 Mybatis
 需要在本地安装 MySQL
-# 8. Mybatis+Druid 实现多数据源
+# 8. chapter-8 Mybatis+Druid 实现多数据源
 热点数据放在主库，访问频次低的数据放在从库
-# 9. Redis
+# 9. chapter-9 Redis
