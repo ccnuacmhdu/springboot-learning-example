@@ -8,7 +8,8 @@ import org.spring.springboot.domain.City;
  *
  * Created by xchunzhao on 02/05/2017.
  */
-@Mapper // 标志为 Mybatis 的 Mapper
+// 标志为 Mybatis 的 Mapper
+@Mapper
 public interface CityDao {
 
     /**
@@ -16,7 +17,9 @@ public interface CityDao {
      *
      * @param cityName 城市名
      */
-    @Select("SELECT * FROM city")
+    @Select("SELECT id,province_id,city_name,description " +
+            "FROM city " +
+            "WHERE city_name = #{cityName}")
     // 返回 Map 结果集
     @Results({
             @Result(property = "id", column = "id"),

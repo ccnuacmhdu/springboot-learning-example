@@ -50,3 +50,5 @@ Java .properties 文件默认编码方式是 iso-8859 ，Spring Boot 应用以 U
 # 4. 分页
 # 5. Restful
 # 6. 统一异常处理
+# 7. Mybatis
+需要在本地安装 MySQL
