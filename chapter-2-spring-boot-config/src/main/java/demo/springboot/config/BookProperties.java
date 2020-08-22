@@ -1,12 +1,17 @@
 package demo.springboot.config;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
  * 书属性
  *
- * Created by bysocket on 27/09/2017.
+ * @Value 注解，对 Bean 的字段或者方法参数进行标注，设置默认属性值。通常格式是注解 + SpEL 表达式，如 @Value("SpEL 表达式")。
+ * 使用 @Value 注解来引用属性值时，确保所引用的属性值在 application.properties 文件存在并且相对应匹配，否则会造成 Bean 的
+ * 创建错误，引发 java.lang.IllegalArgumentException 非法参数异常。
  */
 @Component
 public class BookProperties {
