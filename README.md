@@ -43,5 +43,6 @@ Java .properties 文件默认编码方式是 iso-8859 ，Spring Boot 应用以 U
 中文转 Unicode：[https://javawind.net/tools/native2ascii.jsp]()
 
 配置文件<br/>
+可通过在 application.properties 中指定 spring.profiles.active=prod 确定对应生产环境配置文件<br/>
 若 .properties 和 .yml 同时存在，默认优先使用 .properties
 

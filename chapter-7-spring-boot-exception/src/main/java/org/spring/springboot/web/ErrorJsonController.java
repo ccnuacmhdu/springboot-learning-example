@@ -21,6 +21,9 @@ public class ErrorJsonController {
     /**
      * 获取城市接口
      *
+     * http://localhost:8080/api/city?cityName=xxx
+     * http://localhost:8080/api/city?cityName=
+     *
      * @param cityName
      * @return
      * @throws GlobalErrorInfoException
