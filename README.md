@@ -54,3 +54,4 @@ Java .properties 文件默认编码方式是 iso-8859 ，Spring Boot 应用以 U
 需要在本地安装 MySQL
 # 8. Mybatis+Druid 实现多数据源
 热点数据放在主库，访问频次低的数据放在从库
+# 9. Redis
